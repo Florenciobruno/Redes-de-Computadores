@@ -1,0 +1,41 @@
+https://aws.amazon.com/pt/what-is/computer-networking/#:~:text=Redes%20de%20computadores%20referem%2Dse,tecnologias%20f%C3%ADsicas%20ou%20sem%20fio.
+
+Foto de Pixabay: https://www.pexels.com/pt-br/foto/hub-de-comutacao-branco-ligado-159304/
+
+hub cisco
+http://ss-cable.com/shop/en/home/1773-switching-hub-cisco-sf95d-05-as-5-port.html
+
+
+CSMA CD
+http://www.inf.ufes.br/~zegonc/material/Redes_de_Computadores/Controle%20de%20Acesso%20ao%20Meio%20-%20MAC%282%29.pdf
+
+
+Material de referencia SENAC-Redes de Computadores
+
+https://senacsp.blackboard.com/webapps/blackboard/execute/content/file?cmd=view&content_id=_10152666_1&course_id=_221106_1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
