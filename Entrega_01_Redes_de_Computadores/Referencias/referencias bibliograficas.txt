@@ -1,6 +1,6 @@
 https://aws.amazon.com/pt/what-is/computer-networking/#:~:text=Redes%20de%20computadores%20referem%2Dse,tecnologias%20f%C3%ADsicas%20ou%20sem%20fio.
 
-Foto de Pixabay: https://www.pexels.com/pt-br/foto/hub-de-comutacao-branco-ligado-159304/
+https://www.pexels.com/pt-br/foto/hub-de-comutacao-branco-ligado-159304/
 
 hub cisco
 http://ss-cable.com/shop/en/home/1773-switching-hub-cisco-sf95d-05-as-5-port.html
@@ -10,9 +10,46 @@ CSMA CD
 http://www.inf.ufes.br/~zegonc/material/Redes_de_Computadores/Controle%20de%20Acesso%20ao%20Meio%20-%20MAC%282%29.pdf
 
 
-Material de referencia SENAC-Redes de Computadores
+Material de referencia SENAC-Redes de Computadores 
 
 https://senacsp.blackboard.com/webapps/blackboard/execute/content/file?cmd=view&content_id=_10152666_1&course_id=_221106_1
+
+
+
+https://docente.ifrn.edu.br/tadeuferreira/disciplinas/2012.1/redes-i-eja/Aula17.pdf
+
+
+http://www.inf.ufes.br/~zegonc/material/Redes_de_Computadores/O%20Modelo%20OSI.pdf
+
+
+Foto de John Petalcurin: https://www.pexels.com/pt-br/foto/foto-de-close-up-do-teclado-para-jogos-2115257/
+
+Foto de Henry & Co.: https://www.pexels.com/pt-br/foto/ceu-branco-2344227/
+
+https://www.cisco.com/c/pt_br/products/security/firewalls/what-is-a-firewall/jcr:content/Grid/category_atl_copy/layout-category-atl/anchor_info_8de7.img.jpg/1632477421084.jpg
+
+
+https://www.cisco.com/c/pt_br/products/security/firewalls/what-is-a-firewall.html
+
+https://tecnoblog.net/responde/o-que-e-gateway/
+
+
+https://files.tecnoblog.net/wp-content/uploads/2022/05/gateway-700x394.png
+
+https://aws.amazon.com/pt/storagegateway/hardware-appliance/
+
+https://vcx.solutions/wp-content/uploads/2021/11/firewall-fisico.jpg
+
+
+https://m.media-amazon.com/images/I/412xHVS5oCL._AC_SX679_.jpg
+
+https://pt.wikipedia.org/wiki/Camada_de_sess%C3%A3o
+
+https://slideplayer.com.br/slide/354807/2/images/9/CAMADA+6%3A+APRESENTA%C3%87%C3%83O.jpg
+
+
+
+
 
 
 

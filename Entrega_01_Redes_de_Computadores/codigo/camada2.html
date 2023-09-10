@@ -3,10 +3,9 @@
 				<head>
 						<meta charset="UTF-8">
 						<title>Redes de Computadores</title>
-						<html lang="PT-BR">
 				</head>
 		
-				<body>
+				<body background="..\imagens\fundoAzul.jpg">
 				
 					<img src="..\imagens\bannerAdoRedes2.png" width="1560" heigth="100">
 					
@@ -52,10 +51,64 @@
 											<p>os dispositivos compartilharem o mesmo meio de comunicação , como no caso dos Hubs, a comutação permite </p>
 											<p>que sejam criadas conexoes diretas e dedicadas para transferência de dados.</p>
 
-
 									</section>
 						
 						
+						
+									<section>
+									
+										<h2>Funcionamento do Switch</h2>
+											<p>O switch usa o endereço MAC de cada host para fazer o endereçamento dos quadros.</p>
+											<p>No momento em que é ligado o switch , sua tabela de endereços está vazia e continuará assim até que o host transmita</p>
+											<p>informacões para um destino.</p>
+											<p>No inicio ele encaminha o quadro para todos os segmentos conectados, nesse momento já foi armazendao o endereço de origem</p>
+											<p>na tabela, o endereço de destino será armazenado logo em seguida.</p>
+											<p>Sendo assim, podemos afirmar que o switch aprendeo endereço de cada host lendo o endereço de origemno quadro transmitido para ele</p>
+											<p>e identificando a porta utilizada.</p>
+											<p>O Switch armazena o host e a hora em que ele foi armazenado em sua CAM, e o mantem lá por um período de tempo específico</p>
+											<p>se o endereço do host não é solicitado por um periodo de tempo ele é descartado da lista.</p>
+
+									</section>
+									
+									<section>
+									
+										<h2>Gerenciamento da memória do Switch</h2>
+											<p>Pode acontecer de mais de um quadro chegar para omesmo host;</p>
+											<p>O switch possui um buffer para direcionar os quadros para aporta correta e gerenciar se mais de um quadro chegar namesma porta.</p>
+											<p>O gerenciamento dessa memória pode ocorrer de 2 formas:</p>
+										<ul>
+											<li>Buffer dedicado para cada porta.</li>
+											<li>Gerencia de memória</li>
+										</ul>
+										
+										<h2>Buffer dedicado para cada porta</h2>
+											<p>Cada porta tem seu buffer, mas se chegarem muitosquadro esse buffer pode “estourar” e a informaçãoque está na fila pode se perder</p>
+											
+											
+										<h2>Gerenciamento de Memória</h2>
+											<p>Cada porta tem seu buffer, mas também tem umbuffer global. Se o buffer de uma porta “estourar”, osquadros não se perdem; elas vão para o buffer global.</p>
+
+
+										<h2>Modo de encaminhamento de quadros</h2>
+											<p>O modo como os quadros são encaminhados peloswitch é chamado de switching.</p>
+											<p>Temos os seguintes tipos:</p>
+												<ul>
+													<li>Store and forward</li>
+													<li>Fragment free</li>
+													<li>Cut through</li>
+												</ul>
+												
+											<h2>Store and forward</h2>
+												<p>Recebe bits do quadro no buffer e encaminha para o destino caso o quadro esteja ok.</p>
+												
+											<h2>Fragment Free</h2>
+												<p>É similar ao cut, porem espera o recebimento dos primeiros 64 bytes ante sde encaminhar o quadro, caso não retorne problemas finaliza o envio do quadro</p>
+												
+											<h2>Cut Through</h2>
+												<p>Faz o envio do quadro assim que chega ao switch, assim q o recebe ja lê o endereço MAC do destino e já o envia.</p>
+
+
+									</section>
 						<nav>
 							<footer>
 								<table>
