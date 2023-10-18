@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>ADO Extra 01</title>
+            <link rel="stylesheet" href="ado_extra_01.css">
+        </head>
+        
+        <body>
+
+    <script>
+        alert("Seja bem vindo a leitura da ADO Extra nº 01 de Bruno da Silva Florencio!");
+    </script>
+
+    <h1>Questionário de Endereçamento IPv4</h1>
+
+    <p>Neste trabalho complementar serão respondidas perguntas referentes a camada de rede voltada ao endereçamento do tipo IPv4.</p>
+    
+
+    <section class="perguntas">
+        <div id="topicos">
+            <ol>
+                <li><a href="#resposta_01">Quais as principais funções da camada de rede?</a></li>
+                <li><a href="#resposta_02">Explique o que é roteamento em redes IPv4 e como os roteadores tomam as decisões de roteamento/encaminhamento.</a></li>
+                <li><a href="#resposta_03">Como os endereços IPv4 são compostos e quantos bits eles contêm? Quais as duas representações (notações) possíveis dos endereços IPv4?</a></li>
+                <li><a href="#resposta_04">O que é uma máscara de sub-rede IPv4 e como ela é usada para dividir redes em sub-redes? Quais as duas representações (notações) possíveis das máscara de sub-rede IPv4</a></li>
+                <li><a href="#resposta_05">Qual é o propósito do endereço IP de rede e do endereço de broadcast em uma rede IPv4?</a></li>
+                <li><a href="#resposta_06">Quais são os cinco principais tipos de classes de endereços IPv4 e como eles são usados?</a></li>
+                <li><a href="#resposta_07">Explique por que as sub-redes são usadas em redes IPv4 e como elas ajudam a melhorar o desempenho e a organização da rede. Dê um exemplo de quando é apropriado usar sub-redes em uma rede.</a></li>
+                <li><a href="#resposta_08">Qual é a diferença entre um endereço IPv4 público e um endereço IPv4 privado? Dê exemplos de cada um.</a></li>
+                <li><a href="#resposta_09">O que é o NAT (Network Address Translation) e qual é a sua função em uma rede IPv4?</a></li>
+                <li><a href="#resposta_10">Como um host determina se um destino está na mesma rede ou em uma rede diferente usando um endereço IPv4?</a></li>
+            </ol>
+        </div>
+    </section>        
+
+
+    <section class="respostas">
+        <div id="resposta_01">
+            <h2>01-Quais as principais funções da camada de rede?</h2>
+            
+                <p>As principais funções da camada de rede é a distribuição da informação pela rede, fazendo com que as mensagens sejam entregues</p>
+                <p>aos seus destinos de uma forma eficiente e segura, soponhamos que hajam duas pessoas conectadas a uma mesma rede LAN, essas pessoas </p>
+                <p>podem ter suas mensagens enviadas diretamente de um computador para o outro sem que haja a necessidade de uma rede de longa distância,</p>
+                <p>porém, se eles estiverem conectados em redes diferentes essa conexão não seria possível sem a existência de uma camada de rede.</p>
+        </div>
+    </section>
+
+    <section class="respostas">
+        <div id="resposta_02">
+
+            <h2>02- Explique o que é roteamento em redes IPv4 e como os roteadores tomam as decisões de roteamento/encaminhamento</h2>
+
+                <p>O roteamento é o processo de seleção de caminho em qualquer rede, as redes são compostas por muitos nós e caminhos ou links</p>
+                <p>que conectam esses nós.</p>
+                <p>A comunicação entre os nós de uma rede interconectada pode ocorrer por meio de muitos caminhos diferentes e o reteamento é quem </p>
+                <p>decide qual o melhor caminho a ser seguido usando algumas regras determinadas.</p>
+                <p>Para esse processo são seguidas algumas regras, sendo elas:</p>
+                <ul>
+                    <li>Construção de pacote com endereço de destino  do "PC" para quem deseja enviar a mensagem e o coloca dentro de um frame ethernet com o endereço MAC de destino do router e envia pela ligação ethernet</li>
+                        
+                        <ol>
+                            <li>O router R1 remove a header e o trailer Ethernet</li>
+                            <li>Compara o endereço de destino do pacote com a tabela de roteamento e encontra a entrada para a sub-rede.</li>
+                            <li>De seguida encapsula o pacote IP com uma header e trailer HDLC encaminha a frame para o próximo salto (hop) que é o  router R2 através da interface de saída Serial </li>
+                        </ol>
+                    
+                    <li>O router R2 processa a frame e encaminha-a para o R3. O R2 repete o processo de recepção da frame, verifica através do campo FCS se ocorreram erros.</li>
+                    <li>O router R3 processa a frame e encaminha para o PC2. Repete o processo de recepção da frame e verifica no FCS que não ocorreram erros</li>
+                </ul>
+        </div>
+    </section>
+
+    <section class="resposta">
+        <div id="resposta_03">
+
+            <h2>Como os endereços IPv4 são compostos e quantos bits eles contêm? Quais as duas representações (notações) possíveis dos endereços IPv4?</h2>
+           
+            <p>Os endereços IPv4, como 192.168.0.1 , são apenas representações decimais de quatro blocos binários. Cada bloco tem 8 bits e representa números de 0 a 255. Como os blocos são
+            <br> grupos de 8 bits, cada bloco é conhecido como um octeto. Pelo fato de haver quatro blocos de 8 bits, cada endereço IPv4 é de 32 bits.</p>
+
+        </div>
+    </section>
+
+    <section class="respostas">
+        <div id=" resposta_04">
+            <h2>O que é uma máscara de sub-rede IPv4 e como ela é usada para dividir redes em sub-redes? Quais as duas representações (notações) possíveis das máscara de sub-rede IPv4</h2>
+
+                <p>Uma máscara de sub-rede é um número de 32-bit que mascara um endereço IP e divide o endereço IP em endereço de rede e endereço de host. A máscara de sub-rede é feita 
+                    definindo bits de rede para All “1 ” s e definindo bits de host para All “0 ” s. Dentro de uma determinada rede, dois endereços de host são reservados para fins especiais
+                     e não podem ser atribuídos a hosts. O endereço “0 ” é atribuído a um endereço de rede e “255 ” é atribuído a um endereço de difusão, e eles não podem ser atribuídos a hosts.
+                    Os endereços IPv4 podem ser representados em qualquer notação de expressando um valor inteiro de 32 bits. Eles são mais frequentemente escritos no ponto-notação decimal, que 
+                    consiste em quatro octetos do endereço expressa individualmente em decimal e números separados por períodos.
+
+                    Por exemplo, o endereço IP com quatro pontos 192.0.2.235 representa a versão decimal de 32 bits do número 3221226219, que no formato hexadecimal é 0xC00002EB. Ele também pode ser expresso
+                     em formato de hexadecimal com pontos, como 0xC0.0x00.0x02.0xEB, ou com valores de bytes como 0300.0000.0002.0353.
+                    
+                    Notação CIDR combina o endereço com o seu prefixo de roteamento em um formato compacto, no qual o endereço é seguido por um caractere de barra (/) e a contagem consecutiva de 1
+                     bits do prefixo de roteamento (máscara de sub-rede).</p>
+        </div>
+    </section>
+
+    <section class="respostas">
+        <div id="resposta_05">
+            <h2>Qual é o propósito do endereço IP de rede e do endereço de broadcast em uma rede IPv4?</h2>
+
+            <p>endereço permite a comunicação com todos os hosts dessa rede. Para enviar dados a todos os hosts 
+                em uma rede, um host pode enviar um único pacote que é endereçado ao endereço de broadcast da rede. 
+                Além do endereço de broadcast 255.255.255.255, há um endereço IPv4 de broadcast para cada rede. Chamado
+                 de broadcast direcionado, esse endereço usa o endereço mais alto da rede, que é o endereço onde todos os 
+                 bits do host são 1s. Por exemplo, o endereço de transmissão direcionado para 192.168.1.0/24 é 192.168.1.255.</p>
+
+        </div>
+    </section>
+
+    <section class="respostas">
+        <div id="resposta_06">
+            <h2>Quais são os cinco principais tipos de classes de endereços IPv4 e como eles são usados?</h2>
+            <p>Originalmente, o espaço do endereço IP foi dividido em poucas estruturas de tamanho fixo chamados de "classes de endereço".
+                 As três principais são a classe A, classe B e classe C. Examinando os primeiros bits de um endereço, o software do IP consegue
+                 
+                 determinar rapidamente qual a classe, e logo, a estrutura do endereço:</p>
+            <section id="lista">
+                <div>
+                    <ul>
+                        <li>Classe A: Primeiro bit é 0 (zero);</li>
+                        <li>Classe B: Primeiros dois bits são 10 (um, zero);</li>
+                        <li>Classe C: Primeiros três bits são 110 (um, um, zero);</li>
+                        <li>Classe D: (endereço multicast): Primeiros quatro bits são: 1110 (um, um, um, zero);</li>
+                        <li>Classe E: (endereço especial reservado): Primeiros quatro bits são 1111 (um, um, um, um).</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </section>
+
+     <section id="tabela_hosts">
+        <div>
+            <table>
+                <tr>
+                    <th>Classe</th>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>D</td>
+                        <td>E</td>
+                </tr>
+                    <th>Gama de Endereços</th>
+                        <td>0.0.0.1 até 126.255.255.255</td>
+                        <td>128.0.0.0 até 191.255.255.255</td>
+                        <td>192.0.0.0 até 223.255.255.255</td>
+                        <td>224.0.0.0 até 239.255.255.255</td>
+                        <td>240.0.0.0 até 255.255.255.254</td>
+                <tr>
+                        <th>Nº de Endereços por Rede</th>
+                        <td>16 777 216</td>
+                        <td>65 536</td>
+                        <td>256</td>
+                        <td>multicast</td>
+                        <td>Uso futuro.<br> Atualmente reservada a testes pela IETF</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="respostas">
+        <div id="resposta_07">
+            <h2>Explique por que as sub-redes são usadas em redes IPv4 e como elas ajudam a melhorar o desempenho e a organização da rede.
+                 Dê um exemplo de quando é apropriado usar sub-redes em uma rede.</h2>
+
+        </div>
+    </section>
+
+    <section class="respostas">
+        <div id="resposta_08">
+            <h2>Qual é a diferença entre um endereço IPv4 público e um endereço IPv4 privado? Dê exemplos de cada um.</h2>
+
+            <p>Endereços IP públicos são usados ao interagir com a internet, enquanto os endereços IPs privados operam em uma rede local. Tanto 
+                endereços IP públicos e privados permitem que os dispositivos se comuniquem entre si.
+
+                Em uma rede comum, o roteador usa um endereço IP público para identificar você para o resto da internet, garantindo que e-mail, sites,
+                 conteúdo de streaming e outros dados cheguem até você corretamente. </p>
+        </div>
+    </section>
+
+    <section class="respostas">
+        <div id="resposta_09">
+            <h2>O que é o NAT (Network Address Translation) e qual é a sua função em uma rede IPv4?</h2>
+
+            <p>O NAT (Conversão de Endereços de Rede) é um modo de rede projetado para conservar o endereço IP mapeando uma porta e um 
+                endereço IP externo para um conjunto muito maior de endereços IP internos. Basicamente, um NAT usa uma tabela de fluxo para 
+                rotear o tráfego de um número da porta e endereço IP externos (host) para o endereço IP interno correto associado a um ponto de
+                 extremidade na rede (máquina virtual, computador, contêiner etc.)</p>
+
+        </div>
+    </section>
+
+    <section class="respostas">
+        <div id="resposta_10">
+            <h2>Como um host determina se um destino está na mesma rede ou em uma rede diferente usando um endereço IPv4?</h2>
+
+                <p>O método de determinação varia de acordo com a versão IP: Em IPv4 – O dispositivo de origem usa sua própria
+                     máscara de sub-rede junto com seu próprio endereço IPv4 e o endereço IPv4 de destino para fazer essa determinação.</p>
+        </div>
+    </section>
+    
+
+
+    <section>
+        <div id="fontes">
+
+            <h2>Referências Bibliográficas</h2>
+        <ul>
+            
+            <li><a href="https://docente.ifrn.edu.br/tadeuferreira/disciplinas/2012.1/redes-i-eja/Aula17.pdf">IRFN</a></li>
+            <li><a href="https://www.cloudflare.com/pt-br/learning/network-layer/what-is-the-network-layer/#:~:text=Camada%20de%20rede%3A%20lida%20com,entre%20dispositivos%20na%20mesma%20rede.">Cloudflare</a></li>
+            <li><a href="https://aws.amazon.com/pt/what-is/routing/#:~:text=Roteamento%20%C3%A9%20o%20processo%20de,meio%20de%20muitos%20caminhos%20diferentes.">AWS</a></li>
+            <li><a href="https://byterenovado.wordpress.com/roteamento-ipv4/">Byterenovado</a></li>
+            <li><a href="https://www.freecodecamp.org/portuguese/news/ficha-informativa-de-sub-redes-mascara-de-sub-rede-24-30-26-27-29/#:~:text=Os%20endere%C3%A7os%20IPv4%2C%20como%20192.168,IPv4%20%C3%A9%20de%2032%20bits.">FreeCode</a></li>
+            <li><a href="https://brasilcloud.com.br/duvidas/o-que-e-uma-mascara-de-sub-rede-sub-mask/">Brasilcloud</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/IPv4">Wikipedia</a></li>
+            <li><a href="https://www.avg.com/pt/signal/public-vs-private-ip-address">AVG</a></li>
+            <li><a href="https://ccna.network/como-um-host-encaminha/#:~:text=O%20m%C3%A9todo%20de%20determina%C3%A7%C3%A3o%20varia,destino%20para%20fazer%20essa%20determina%C3%A7%C3%A3o.">CCNA</a></li>
+            <li><a href="https://learn.microsoft.com/pt-br/virtualization/hyper-v-on-windows/user-guide/setup-nat-network">Microsoft</a></li>
+        </ul>   
+        </div>
+    </section>
+</body>
+</html>

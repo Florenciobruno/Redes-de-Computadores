@@ -1,0 +1,72 @@
+h1{
+    font-size: 30pt;
+    font-family:gravity;
+    color:black;
+    text-align: center;
+    font-style:normal;
+}
+
+h2{
+    font-size:25pt;
+    font-family:gravity;
+    color:black;
+    text-align: left;
+    font-style:normal;
+}
+#topicos{
+    font-size:16pt;
+    font-family:gravity;
+    text-align: left;
+    font-style:normal;
+    color:black;
+    
+ 
+}
+
+body{
+    background-color:#B0C4DE;
+}
+p{
+    font-size: 16pt;
+    font-family:gravity;
+    color:black;
+    text-align: left;
+    font-style:normal;
+}
+#tabela_hosts,th, td, tr{
+    border: 5px solid black;
+    text-align: center;
+    font-size:16pt; 
+    font-family:gravity;
+    color:black;
+    font-style: normal;
+}
+
+#respostas{
+    font-size:16pt;
+    font-family:gravity;
+    font-style: normal;
+    color:black;
+    text-align: left;
+}
+#lista{
+    font-size:16pt;
+    font-family:gravity;
+    font-style: normal;
+    color: black;
+    text-align: left;
+}
+a:link{
+    text-decoration:none;
+    color:black;
+    font-size:16pt;
+    font-family:gravity;
+}
+
+body{
+    justify-content: center;
+    align-items:center;
+    background-attachment:fixed;
+    background-size: cover;
+    background-image: url(dhttps://www.senairs.org.br/sites/default/files/styles/2x1_lg/public/paragraphs--image-top/istock-691171106.jpg?itok=Ef_UMwdW);
+}
